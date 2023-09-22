@@ -5,6 +5,8 @@ const up = document.querySelector('.top');
 
 const down = document.querySelector('.bottom');
 
+const thumb = document.querySelector('.thumb');
+
 const images = [
     {
         image: 'img/01.webp',
@@ -45,6 +47,9 @@ images.forEach((images)=>{
           <p class="fs-4">${text}</p>
        </div>
     </div>`;
+    
+    thumb.innerHTML += `<img src="${img}">`;
+    
 })
 
 let counter = 0;
@@ -102,13 +107,13 @@ function nextPrev(isNext){
 
 }
 
-let c=0;
-const time= setInterval(function(){
+// let c=0;
+// const time= setInterval(function(){
     
-    next();
-    c++;
-    if(c === images.length - 1){
-        clearInterval(time);   
-    }
+//     next();
+//     c++;
+//     if(c === images.length - 1){
+//         clearInterval(time);   
+//     }
 
-}, 3000);
+// }, 3000);

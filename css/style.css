@@ -11,8 +11,8 @@ body{
     line-height: 50px;
     text-align: center;
     cursor: pointer;
-    left: 50%;
-    transform: translateY(-50%);
+    left: 40%;
+    transform: translateY(-40%);
 }
 .arrow.top{
     top: 5%;
@@ -33,4 +33,10 @@ body{
 h1{
 font-size: 50px;
 font-weight: bold;
+}
+
+.thumb img{
+    width: 100%;
+    height: calc(100% / 5);
+    object-fit: cover;
 }
