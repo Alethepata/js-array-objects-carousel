@@ -48,7 +48,7 @@ images.forEach((images)=>{
        </div>
     </div>`;
     
-    thumb.innerHTML += `<img src="${img}">`;
+    thumb.innerHTML += `<img class="filter second-item" src="${img}">`;
     
 })
 
@@ -56,7 +56,10 @@ let counter = 0;
 
 const itemsCollection = document.getElementsByClassName('item');
 
+const secondItem = document.getElementsByClassName('second-item');
+
 itemsCollection[counter].classList.remove('d-none');
+secondItem[counter].classList.remove('filter');
 
 down.classList.add('d-none');
 
@@ -77,6 +80,7 @@ function prev(){
 function nextPrev(isNext){
 
     itemsCollection[counter].classList.add('d-none');
+    secondItem[counter].classList.add('filter');
 
     if(isNext){
 
@@ -104,16 +108,17 @@ function nextPrev(isNext){
     }
 
     itemsCollection[counter].classList.remove('d-none');
+    secondItem[counter].classList.remove('filter');
 
 }
 
-// let c=0;
-// const time= setInterval(function(){
+let c=0;
+const time= setInterval(function(){
     
-//     next();
-//     c++;
-//     if(c === images.length - 1){
-//         clearInterval(time);   
-//     }
+    next();
+    c++;
+    if(c === images.length - 1){
+        clearInterval(time);   
+    }
 
-// }, 3000);
+}, 3000);
