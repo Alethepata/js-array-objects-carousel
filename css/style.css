@@ -16,3 +16,12 @@
 .arrow.bottom{
     top: 95%;
 }
+
+.text-content{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: white;
+    text-align: end;
+    padding: 30px;
+}
