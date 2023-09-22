@@ -89,7 +89,8 @@ function nextPrev(isNext){
         counter--;
 
         if(counter === 0){
-    
+            
+            
             down.classList.add('d-none');
             up.classList.remove('d-none');
     
@@ -100,3 +101,13 @@ function nextPrev(isNext){
 
 }
 
+let c=0;
+const time= setInterval(function(){
+    
+    next();
+    c++;
+    if(c === images.length - 1){
+        clearInterval(time);   
+    }
+
+}, 3000);
