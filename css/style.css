@@ -1,3 +1,7 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
 .arrow{
     position: absolute;
     background-color: rgba(255, 255, 255, 0.8);
@@ -24,4 +28,9 @@
     color: white;
     text-align: end;
     padding: 30px;
+}
+
+h1{
+font-size: 50px;
+font-weight: bold;
 }
