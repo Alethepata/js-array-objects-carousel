@@ -92,9 +92,10 @@ function nextPrev(isNext){
             
             
             down.classList.add('d-none');
-            up.classList.remove('d-none');
+            
     
         }
+        up.classList.remove('d-none');
     }
 
     itemsCollection[counter].classList.remove('d-none');
