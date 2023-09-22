@@ -5,21 +5,6 @@ const up = document.querySelector('.top');
 
 const down = document.querySelector('.bottom');
 
-// const images = [
-//     'img/01.webp',
-//     'img/02.webp',
-//     'img/03.webp',
-//     'img/04.webp',
-//     'img/05.webp'
-// ]
-
-// for(let i = 0; i < images.length; i++){
-
-//     const image = images[i];
-
-//     itemsWrapper.innerHTML += `<img src="${image}" class= " w-100 h-100 object-fit-cover d-none item">`;
-// }
-
 const images = [
     {
         image: 'img/01.webp',
@@ -45,13 +30,22 @@ const images = [
 ];
 
 images.forEach((images)=>{
+
     const img = images.image;
-    const title = images.title;  
-    const text = images.text;  
+
+    const title = images.title; 
+
+    const text = images.text;
+
+    itemsWrapper.innerHTML += 
+    `<div class="d-none item w-100 h-100 position-relative">
+      <img src="${img}" class= " object-fit-cover w-100 h-100 ">
+       <div class="text-content">
+          <h1>${title}</h1>
+          <p class="fs-4">${text}</p>
+       </div>
+    </div>`;
 })
-
-
-
 
 let counter = 0;
 
