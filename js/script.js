@@ -44,6 +44,12 @@ const images = [
     }
 ];
 
+images.forEach((images)=>{
+    const img = images.image;
+    const title = images.title;  
+    const text = images.text;  
+})
+
 
 
 
