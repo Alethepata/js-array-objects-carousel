@@ -11,8 +11,7 @@ body{
     line-height: 50px;
     text-align: center;
     cursor: pointer;
-    left: 40%;
-    transform: translateY(-40%);
+    right: 10%;
 }
 .arrow.top{
     top: 5%;
@@ -39,4 +38,10 @@ font-weight: bold;
     width: 100%;
     height: calc(100% / 5);
     object-fit: cover;
+
 }
+
+.filter{
+    filter:brightness(0.5);
+}
+
